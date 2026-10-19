@@ -1,0 +1,48 @@
+/* Layout: sidebar kiri 232px + area kerja di atas grid tipis; di layar sempit sidebar jadi tab bar bawah.
+   Sengaja hanya tema terang (pedoman HMI high-performance): latar terang & netral mengurangi silau di ruang kerja terang,
+   warna hanya untuk hal yang perlu perhatian. Kuning = belum dikenali, merah = bahaya tinggi saja. */
+:root {
+  --bg: #ffffff;
+  --bg-sunken: #f5f6f4;
+  --bg-muted: #eceeea;
+  --grid: #eff2ee;
+  --line: #e5e8e3;
+  --line-strong: #cdd2cb;
+  --fg: #0b0d0c;
+  --fg-2: #5c635e;
+  --fg-3: #8d938e;
+
+  --accent: #0b9a4e;
+  --accent-strong: #077d3e;
+  --accent-soft: #e8f6ee;
+  --on-accent: #ffffff;
+
+  --ok: #077d3e;
+  --ok-soft: #e8f6ee;
+  --warn: #b86e00;
+  --warn-soft: #fff3df;
+  --idle: #56606b;
+  --idle-soft: #eef0f2;
+  --new: #6847e8;
+  --new-soft: #f0ecfe;
+  --danger: #d92d20;
+  --danger-soft: #feedeb;
+
+  --photo-bg: #ffffff;
+  /* panggung kamera: abu terang netral, objek dan label gelap */
+  --video: #e7eae6;
+  --video-fg: #1b201d;
+  --video-obj: #c9cec7;
+  --video-line: rgba(11, 13, 12, 0.08);
+  --scrim: rgba(8, 10, 9, 0.56);
+  --shadow: 0 1px 2px rgba(11, 13, 12, 0.04), 0 8px 24px rgba(11, 13, 12, 0.06);
+
+  --font-sans: 'Geist Sans', 'Geist', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 14px;
+  --sidebar: 232px;
+  color-scheme: light;
+}

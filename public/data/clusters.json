@@ -1,0 +1,1363 @@
+{
+ "meta": {
+  "title": "Hasil klaster SiPilah",
+  "demo": true,
+  "demoNote": "Data contoh dari naskah semifinal. Foto lengkap muncul setelah ekspor dari notebook.",
+  "images": {
+   "total": 3961,
+   "duplicates": 30,
+   "unique": 3931
+  },
+  "clusters": {
+   "total": 22,
+   "trusted": 20,
+   "review": 2
+  },
+  "coverage": {
+   "clustered": 2222,
+   "trusted": 1780,
+   "review": 442,
+   "noise": 1709
+  },
+  "quality": {
+   "silhouetteBefore": 0.398,
+   "silhouetteAfter": 0.462,
+   "dbiBefore": 1.467,
+   "dbiAfter": 1.358,
+   "ariCoassigned": 0.919,
+   "ariAll": 0.736
+  },
+  "thresholds": {
+   "support": 5,
+   "silhouette": 0.1,
+   "compactness": 0.65,
+   "margin": 0.05
+  },
+  "birth": {
+   "purity": 1.0,
+   "recall": 0.942,
+   "falseSafe": 0,
+   "falseNaive": 27
+  },
+  "retrieval": {
+   "chunks": 48,
+   "sources": 7,
+   "hit5": 1.0,
+   "mrr5": 0.883
+  }
+ },
+ "families": [
+  {
+   "id": "listrik",
+   "name": "Listrik",
+   "color": "#3B6FB6"
+  },
+  {
+   "id": "audio",
+   "name": "Audio",
+   "color": "#E07B24"
+  },
+  {
+   "id": "energi",
+   "name": "Baterai & aki",
+   "color": "#D63B3B"
+  },
+  {
+   "id": "rumah",
+   "name": "Rumah tangga",
+   "color": "#2A9D8F"
+  },
+  {
+   "id": "komputer",
+   "name": "Komputer",
+   "color": "#6E9A2E"
+  },
+  {
+   "id": "tampilan",
+   "name": "Layar & HP",
+   "color": "#C99A06"
+  },
+  {
+   "id": "campuran",
+   "name": "Komponen",
+   "color": "#9B5BA5"
+  },
+  {
+   "id": "noise",
+   "name": "Belum terkelompok",
+   "color": "#8D938E"
+  }
+ ],
+ "bins": [
+  {
+   "id": "b3",
+   "name": "Wadah Baterai (B3)",
+   "short": "B3",
+   "color": "#D92D20"
+  },
+  {
+   "id": "layar",
+   "name": "Wadah Layar",
+   "short": "LYR",
+   "color": "#C98A00"
+  },
+  {
+   "id": "gawai",
+   "name": "Wadah HP & Laptop",
+   "short": "HP",
+   "color": "#1D5FA8"
+  },
+  {
+   "id": "ti",
+   "name": "Wadah Komputer",
+   "short": "KOM",
+   "color": "#2A9D8F"
+  },
+  {
+   "id": "kecil",
+   "name": "Wadah Elektronik Kecil",
+   "short": "KCL",
+   "color": "#7A5AC8"
+  },
+  {
+   "id": "besar",
+   "name": "Area Barang Besar",
+   "short": "BSR",
+   "color": "#6B5B4B"
+  },
+  {
+   "id": "pcb",
+   "name": "Wadah PCB",
+   "short": "PCB",
+   "color": "#0B9A4E"
+  },
+  {
+   "id": "karantina",
+   "name": "Wadah Periksa",
+   "short": "PRK",
+   "color": "#6B7280"
+  }
+ ],
+ "sources": [
+  {
+   "id": "IDN_PLHK9_2024",
+   "docs": 13,
+   "region": "Indonesia"
+  },
+  {
+   "id": "BASEL_COMPUTING_2025",
+   "docs": 12,
+   "region": "Global"
+  },
+  {
+   "id": "BASEL_MOBILE_2025",
+   "docs": 7,
+   "region": "Global"
+  },
+  {
+   "id": "WHO_EWASTE_2024",
+   "docs": 5,
+   "region": "Global"
+  },
+  {
+   "id": "EPA_LIION",
+   "docs": 5,
+   "region": "Amerika Serikat"
+  },
+  {
+   "id": "IDN_PP27_2020",
+   "docs": 3,
+   "region": "Indonesia"
+  },
+  {
+   "id": "EPA_ELECTRONICS",
+   "docs": 3,
+   "region": "Amerika Serikat"
+  }
+ ],
+ "clusters": [
+  {
+   "id": "K00",
+   "name": "Saklar & stopkontak",
+   "family": "listrik",
+   "status": "lolos",
+   "size": 22,
+   "sizeEstimated": false,
+   "silhouette": 0.598,
+   "silhouetteEstimated": true,
+   "compactness": null,
+   "margin": null,
+   "gate": {
+    "support": true,
+    "silhouette": true,
+    "compactness": true,
+    "margin": true
+   },
+   "bin": "kecil",
+   "hazard": "rendah",
+   "visual": "Saklar dan stopkontak dinding, sering masih menempel di tembok.",
+   "components": [
+    "rumah plastik",
+    "terminal logam",
+    "pegas dan kontak tembaga"
+   ],
+   "hazardNote": "Indikatif rendah; risiko utama sisa kabel bertegangan bila dicopot dari instalasi aktif.",
+   "steps": [
+    "Pastikan sudah lepas dari listrik."
+   ],
+   "note": "Logam kontak bernilai daur ulang; pisahkan dari puing bangunan.",
+   "sources": [
+    "IDN_PLHK9_2024",
+    "IDN_PP27_2020"
+   ],
+   "samples": [
+    {
+     "src": "images/sample/k00-1.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k00-2.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k00-3.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k00-4.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k00-5.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k00-6.jpg",
+     "sim": null
+    }
+   ]
+  },
+  {
+   "id": "K01",
+   "name": "Amplifier & receiver",
+   "family": "audio",
+   "status": "lolos",
+   "size": 12,
+   "sizeEstimated": true,
+   "silhouette": 0.52,
+   "silhouetteEstimated": true,
+   "compactness": null,
+   "margin": null,
+   "gate": {
+    "support": true,
+    "silhouette": true,
+    "compactness": true,
+    "margin": true
+   },
+   "bin": "kecil",
+   "hazard": "rendah",
+   "visual": "Kotak audio dengan kenop dan layar kecil.",
+   "components": [
+    "papan sirkuit",
+    "trafo",
+    "rangka logam",
+    "kabel"
+   ],
+   "hazardNote": "Indikatif rendah; trafo dan kapasitor besar perlu ditangani pengelola berizin.",
+   "steps": [
+    "Cabut kabel, masukkan utuh."
+   ],
+   "note": "",
+   "sources": [
+    "IDN_PLHK9_2024",
+    "WHO_EWASTE_2024"
+   ],
+   "samples": []
+  },
+  {
+   "id": "K02",
+   "name": "Printer kasir",
+   "family": "komputer",
+   "status": "lolos",
+   "size": 6,
+   "sizeEstimated": true,
+   "silhouette": 0.511,
+   "silhouetteEstimated": true,
+   "compactness": null,
+   "margin": null,
+   "gate": {
+    "support": true,
+    "silhouette": true,
+    "compactness": true,
+    "margin": true
+   },
+   "bin": "ti",
+   "hazard": "rendah",
+   "visual": "Printer kecil untuk struk atau label.",
+   "components": [
+    "papan sirkuit",
+    "kepala cetak termal",
+    "motor",
+    "catu daya"
+   ],
+   "hazardNote": "Indikatif rendah.",
+   "steps": [
+    "Keluarkan sisa kertas."
+   ],
+   "note": "Klaster terkecil (≈6 foto), tetap lolos syarat support minimal 5.",
+   "sources": [
+    "BASEL_COMPUTING_2025",
+    "IDN_PLHK9_2024"
+   ],
+   "samples": []
+  },
+  {
+   "id": "K03",
+   "name": "Baterai kecil (AA, AAA)",
+   "family": "energi",
+   "status": "lolos",
+   "size": 26,
+   "sizeEstimated": true,
+   "silhouette": 0.497,
+   "silhouetteEstimated": true,
+   "compactness": null,
+   "margin": null,
+   "gate": {
+    "support": true,
+    "silhouette": true,
+    "compactness": true,
+    "margin": true
+   },
+   "bin": "b3",
+   "hazard": "tinggi",
+   "visual": "Baterai silinder ukuran rumah tangga.",
+   "components": [
+    "sel baterai",
+    "casing logam",
+    "label plastik"
+   ],
+   "hazardNote": "Tinggi; baterai lepas memerlukan perlindungan terminal dan pengumpulan terpisah.",
+   "steps": [
+    "Tutup kedua kutub dengan selotip.",
+    "Kembung atau bocor → Wadah Periksa."
+   ],
+   "note": "Jenis kimia baterai tidak bisa dipastikan dari foto.",
+   "sources": [
+    "EPA_LIION",
+    "IDN_PP27_2020",
+    "IDN_PLHK9_2024"
+   ],
+   "samples": []
+  },
+  {
+   "id": "K04",
+   "name": "Baterai laptop",
+   "family": "energi",
+   "status": "lolos",
+   "size": 105,
+   "sizeEstimated": true,
+   "silhouette": 0.346,
+   "silhouetteEstimated": true,
+   "compactness": null,
+   "margin": null,
+   "gate": {
+    "support": true,
+    "silhouette": true,
+    "compactness": true,
+    "margin": true
+   },
+   "bin": "b3",
+   "hazard": "tinggi",
+   "visual": "Baterai laptop berbentuk batang atau pipih.",
+   "components": [
+    "sel litium",
+    "papan proteksi",
+    "casing plastik"
+   ],
+   "hazardNote": "Tinggi; paket litium dapat terbakar bila rusak atau terhubung singkat.",
+   "steps": [
+    "Tutup konektor dengan selotip.",
+    "Jangan ditekan atau dibongkar.",
+    "Kembung atau bocor → Wadah Periksa."
+   ],
+   "note": "",
+   "sources": [
+    "EPA_LIION",
+    "IDN_PP27_2020",
+    "IDN_PLHK9_2024"
+   ],
+   "samples": [
+    {
+     "src": "images/sample/k04-1.jpg",
+     "sim": null
+    }
+   ]
+  },
+  {
+   "id": "K05",
+   "name": "Aki",
+   "family": "energi",
+   "status": "lolos",
+   "size": 32,
+   "sizeEstimated": true,
+   "silhouette": 0.617,
+   "silhouetteEstimated": true,
+   "compactness": null,
+   "margin": null,
+   "gate": {
+    "support": true,
+    "silhouette": true,
+    "compactness": true,
+    "margin": true
+   },
+   "bin": "b3",
+   "hazard": "tinggi",
+   "visual": "Aki kendaraan, kotak dengan dua kutub di atas.",
+   "components": [
+    "pelat timbal",
+    "elektrolit asam",
+    "casing plastik"
+   ],
+   "hazardNote": "Tinggi; berat dan berisi elektrolit, rawan tumpah.",
+   "steps": [
+    "Angkat tegak, jangan dimiringkan.",
+    "Tutup kedua kutub.",
+    "Rembes cairan → Wadah Periksa, beri alas."
+   ],
+   "note": "",
+   "sources": [
+    "IDN_PP27_2020",
+    "IDN_PLHK9_2024"
+   ],
+   "samples": []
+  },
+  {
+   "id": "K06",
+   "name": "Mesin cuci",
+   "family": "rumah",
+   "status": "lolos",
+   "size": 277,
+   "sizeEstimated": true,
+   "silhouette": 0.413,
+   "silhouetteEstimated": true,
+   "compactness": null,
+   "margin": null,
+   "gate": {
+    "support": true,
+    "silhouette": true,
+    "compactness": true,
+    "margin": true
+   },
+   "bin": "besar",
+   "hazard": "sedang",
+   "visual": "Mesin cuci bukaan depan atau atas.",
+   "components": [
+    "motor",
+    "papan kendali",
+    "drum logam",
+    "selang dan kabel"
+   ],
+   "hazardNote": "Indikatif sedang; berat dan berisi kapasitor motor.",
+   "steps": [
+    "Kuras sisa air.",
+    "Pindahkan dengan troli, dua orang."
+   ],
+   "note": "",
+   "sources": [
+    "IDN_PLHK9_2024",
+    "EPA_ELECTRONICS"
+   ],
+   "samples": [
+    {
+     "src": "images/sample/k06-1.jpg",
+     "sim": null
+    }
+   ]
+  },
+  {
+   "id": "K07",
+   "name": "Radio portabel",
+   "family": "audio",
+   "status": "lolos",
+   "size": 52,
+   "sizeEstimated": true,
+   "silhouette": 0.474,
+   "silhouetteEstimated": true,
+   "compactness": null,
+   "margin": null,
+   "gate": {
+    "support": true,
+    "silhouette": true,
+    "compactness": true,
+    "margin": true
+   },
+   "bin": "kecil",
+   "hazard": "rendah",
+   "visual": "Radio atau boombox, sering dengan pemutar CD.",
+   "components": [
+    "papan sirkuit",
+    "pengeras suara",
+    "mekanik CD",
+    "kompartemen baterai"
+   ],
+   "hazardNote": "Indikatif rendah; periksa kompartemen baterai.",
+   "steps": [
+    "Keluarkan baterai bila ada."
+   ],
+   "note": "",
+   "sources": [
+    "IDN_PLHK9_2024",
+    "WHO_EWASTE_2024"
+   ],
+   "samples": []
+  },
+  {
+   "id": "K08",
+   "name": "Discman",
+   "family": "audio",
+   "status": "lolos",
+   "size": 13,
+   "sizeEstimated": true,
+   "silhouette": 0.48,
+   "silhouetteEstimated": true,
+   "compactness": null,
+   "margin": null,
+   "gate": {
+    "support": true,
+    "silhouette": true,
+    "compactness": true,
+    "margin": true
+   },
+   "bin": "kecil",
+   "hazard": "rendah",
+   "visual": "Pemutar CD genggam, bundar pipih.",
+   "components": [
+    "mekanik optik",
+    "papan sirkuit",
+    "kompartemen baterai"
+   ],
+   "hazardNote": "Indikatif rendah.",
+   "steps": [
+    "Keluarkan baterai bila ada."
+   ],
+   "note": "Terpisah dari K07 karena bentuk genggam yang khas.",
+   "sources": [
+    "IDN_PLHK9_2024",
+    "WHO_EWASTE_2024"
+   ],
+   "samples": []
+  },
+  {
+   "id": "K09",
+   "name": "Turntable",
+   "family": "audio",
+   "status": "lolos",
+   "size": 79,
+   "sizeEstimated": false,
+   "silhouette": 0.436,
+   "silhouetteEstimated": true,
+   "compactness": null,
+   "margin": null,
+   "gate": {
+    "support": true,
+    "silhouette": true,
+    "compactness": true,
+    "margin": true
+   },
+   "bin": "kecil",
+   "hazard": "rendah",
+   "visual": "Pemutar piringan hitam dengan tutup akrilik.",
+   "components": [
+    "motor",
+    "lengan jarum",
+    "papan sirkuit",
+    "pengeras suara"
+   ],
+   "hazardNote": "Indikatif rendah.",
+   "steps": [
+    "Masukkan utuh."
+   ],
+   "note": "Dipakai di uji pertumbuhan: muncul kembali sebagai N01 (recall 94,94%).",
+   "sources": [
+    "IDN_PLHK9_2024",
+    "WHO_EWASTE_2024"
+   ],
+   "samples": [
+    {
+     "src": "images/sample/k09-1.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k09-2.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k09-3.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k09-4.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k09-5.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k09-6.jpg",
+     "sim": null
+    }
+   ]
+  },
+  {
+   "id": "K10",
+   "name": "Microwave",
+   "family": "rumah",
+   "status": "lolos",
+   "size": 206,
+   "sizeEstimated": true,
+   "silhouette": 0.531,
+   "silhouetteEstimated": true,
+   "compactness": null,
+   "margin": null,
+   "gate": {
+    "support": true,
+    "silhouette": true,
+    "compactness": true,
+    "margin": true
+   },
+   "bin": "besar",
+   "hazard": "tinggi",
+   "visual": "Oven microwave dengan pintu kaca.",
+   "components": [
+    "magnetron",
+    "kapasitor tegangan tinggi",
+    "trafo",
+    "rangka logam"
+   ],
+   "hazardNote": "Tinggi; memiliki komponen tegangan tinggi yang dapat menyimpan muatan.",
+   "steps": [
+    "Jangan buka penutup belakang (tegangan tinggi).",
+    "Masukkan utuh."
+   ],
+   "note": "Pembongkaran hanya oleh pengelola berizin.",
+   "sources": [
+    "IDN_PLHK9_2024",
+    "EPA_ELECTRONICS"
+   ],
+   "samples": []
+  },
+  {
+   "id": "K11",
+   "name": "Printer",
+   "family": "komputer",
+   "status": "lolos",
+   "size": 193,
+   "sizeEstimated": false,
+   "silhouette": 0.336,
+   "silhouetteEstimated": true,
+   "compactness": null,
+   "margin": null,
+   "gate": {
+    "support": true,
+    "silhouette": true,
+    "compactness": true,
+    "margin": true
+   },
+   "bin": "ti",
+   "hazard": "rendah",
+   "visual": "Printer meja dengan baki kertas dan kartrid.",
+   "components": [
+    "kartrid tinta",
+    "papan sirkuit",
+    "motor",
+    "catu daya",
+    "plastik"
+   ],
+   "hazardNote": "Residu tinta, bagian mekanis, dan debu (indikatif).",
+   "steps": [
+    "Lepas kartrid, pisahkan.",
+    "Masukkan unitnya."
+   ],
+   "note": "Kartrid perlu dipisahkan melalui jalur yang sesuai.",
+   "sources": [
+    "BASEL_COMPUTING_2025",
+    "IDN_PLHK9_2024"
+   ],
+   "samples": [
+    {
+     "src": "images/sample/k11-1.jpg",
+     "sim": 0.831
+    },
+    {
+     "src": "images/sample/k11-2.jpg",
+     "sim": 0.827
+    },
+    {
+     "src": "images/sample/k11-3.jpg",
+     "sim": 0.827
+    },
+    {
+     "src": "images/sample/k11-4.jpg",
+     "sim": 0.815
+    },
+    {
+     "src": "images/sample/k11-5.jpg",
+     "sim": 0.814
+    },
+    {
+     "src": "images/sample/k11-6.jpg",
+     "sim": 0.813
+    },
+    {
+     "src": "images/sample/k11-7.jpg",
+     "sim": 0.812
+    },
+    {
+     "src": "images/sample/k11-8.jpg",
+     "sim": 0.811
+    }
+   ]
+  },
+  {
+   "id": "K12",
+   "name": "Laptop",
+   "family": "komputer",
+   "status": "lolos",
+   "size": 128,
+   "sizeEstimated": true,
+   "silhouette": 0.38,
+   "silhouetteEstimated": true,
+   "compactness": null,
+   "margin": null,
+   "gate": {
+    "support": true,
+    "silhouette": true,
+    "compactness": true,
+    "margin": true
+   },
+   "bin": "gawai",
+   "hazard": "sedang",
+   "visual": "Laptop terbuka atau tertutup.",
+   "components": [
+    "baterai litium",
+    "papan induk",
+    "layar",
+    "media penyimpanan"
+   ],
+   "hazardNote": "Indikatif sedang; ada baterai internal dan data pribadi.",
+   "steps": [
+    "Jangan dibongkar.",
+    "Masukkan ke wadah terkunci (ada data pribadi)."
+   ],
+   "note": "Ponsel dan laptop memerlukan perhatian terhadap data pribadi serta baterai.",
+   "sources": [
+    "BASEL_COMPUTING_2025",
+    "EPA_LIION"
+   ],
+   "samples": []
+  },
+  {
+   "id": "K13",
+   "name": "TV tabung kecil",
+   "family": "tampilan",
+   "status": "lolos",
+   "size": 19,
+   "sizeEstimated": true,
+   "silhouette": 0.519,
+   "silhouetteEstimated": true,
+   "compactness": null,
+   "margin": null,
+   "gate": {
+    "support": true,
+    "silhouette": true,
+    "compactness": true,
+    "margin": true
+   },
+   "bin": "layar",
+   "hazard": "tinggi",
+   "visual": "TV tabung (CRT) ukuran kecil.",
+   "components": [
+    "tabung kaca CRT",
+    "papan sirkuit",
+    "kumparan defleksi"
+   ],
+   "hazardNote": "Tinggi; CRT tidak diperlakukan sebagai kaca biasa.",
+   "steps": [
+    "Angkat dengan layar menghadap badan.",
+    "Retak atau pecah → Wadah Periksa."
+   ],
+   "note": "",
+   "sources": [
+    "WHO_EWASTE_2024",
+    "EPA_ELECTRONICS"
+   ],
+   "samples": []
+  },
+  {
+   "id": "K14",
+   "name": "Mouse",
+   "family": "komputer",
+   "status": "lolos",
+   "size": 190,
+   "sizeEstimated": true,
+   "silhouette": 0.503,
+   "silhouetteEstimated": true,
+   "compactness": null,
+   "margin": null,
+   "gate": {
+    "support": true,
+    "silhouette": true,
+    "compactness": true,
+    "margin": true
+   },
+   "bin": "ti",
+   "hazard": "rendah",
+   "visual": "Mouse komputer, berkabel atau nirkabel.",
+   "components": [
+    "papan sirkuit kecil",
+    "sensor optik",
+    "kabel",
+    "baterai (nirkabel)"
+   ],
+   "hazardNote": "Indikatif rendah; tetikus nirkabel bisa berisi baterai.",
+   "steps": [
+    "Keluarkan baterai bila nirkabel."
+   ],
+   "note": "",
+   "sources": [
+    "BASEL_COMPUTING_2025",
+    "IDN_PLHK9_2024"
+   ],
+   "samples": []
+  },
+  {
+   "id": "K15",
+   "name": "PCB campuran",
+   "family": "campuran",
+   "status": "tinjau",
+   "size": 341,
+   "sizeEstimated": false,
+   "silhouette": 0.218,
+   "silhouetteEstimated": false,
+   "compactness": 0.623,
+   "margin": null,
+   "gate": {
+    "support": true,
+    "silhouette": true,
+    "compactness": false,
+    "margin": true
+   },
+   "bin": "pcb",
+   "hazard": "sedang",
+   "visual": "Tumpukan papan sirkuit dari berbagai perangkat.",
+   "components": [
+    "papan sirkuit",
+    "kapasitor",
+    "chip",
+    "konektor"
+   ],
+   "hazardNote": "Indikatif sedang; isinya terlalu beragam untuk satu jalur penanganan.",
+   "steps": [
+    "Masukkan ke Wadah PCB."
+   ],
+   "note": "Fotonya terlalu beragam (compactness 0,623, syarat 0,65). Barang tetap dipilah ke Wadah PCB; kelompoknya yang perlu diaudit.",
+   "sources": [
+    "BASEL_COMPUTING_2025",
+    "WHO_EWASTE_2024"
+   ],
+   "samples": [
+    {
+     "src": "images/sample/k15-1.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k15-2.jpg",
+     "sim": null
+    }
+   ]
+  },
+  {
+   "id": "K16",
+   "name": "TV tabung besar",
+   "family": "tampilan",
+   "status": "lolos",
+   "size": 55,
+   "sizeEstimated": true,
+   "silhouette": 0.516,
+   "silhouetteEstimated": true,
+   "compactness": null,
+   "margin": null,
+   "gate": {
+    "support": true,
+    "silhouette": true,
+    "compactness": true,
+    "margin": true
+   },
+   "bin": "layar",
+   "hazard": "tinggi",
+   "visual": "TV tabung (CRT) model lama, bodi tebal.",
+   "components": [
+    "tabung kaca CRT",
+    "papan sirkuit",
+    "rangka kayu/plastik"
+   ],
+   "hazardNote": "Tinggi; CRT tidak diperlakukan sebagai kaca biasa.",
+   "steps": [
+    "Pindahkan dengan troli.",
+    "Retak atau pecah → Wadah Periksa."
+   ],
+   "note": "",
+   "sources": [
+    "WHO_EWASTE_2024",
+    "EPA_ELECTRONICS"
+   ],
+   "samples": []
+  },
+  {
+   "id": "K17",
+   "name": "Smartphone",
+   "family": "tampilan",
+   "status": "lolos",
+   "size": 254,
+   "sizeEstimated": true,
+   "silhouette": 0.439,
+   "silhouetteEstimated": true,
+   "compactness": null,
+   "margin": null,
+   "gate": {
+    "support": true,
+    "silhouette": true,
+    "compactness": true,
+    "margin": true
+   },
+   "bin": "gawai",
+   "hazard": "sedang",
+   "visual": "HP layar sentuh.",
+   "components": [
+    "baterai litium",
+    "layar",
+    "papan induk",
+    "kamera"
+   ],
+   "hazardNote": "Indikatif sedang; baterai internal dan data pribadi.",
+   "steps": [
+    "Jangan dibongkar.",
+    "Masukkan ke wadah terkunci (ada data pribadi)."
+   ],
+   "note": "Ponsel dan laptop memerlukan perhatian terhadap data pribadi serta baterai.",
+   "sources": [
+    "BASEL_MOBILE_2025",
+    "EPA_LIION"
+   ],
+   "samples": [
+    {
+     "src": "images/sample/k17-1.jpg",
+     "sim": null
+    }
+   ]
+  },
+  {
+   "id": "K18",
+   "name": "HP jadul",
+   "family": "tampilan",
+   "status": "lolos",
+   "size": 17,
+   "sizeEstimated": true,
+   "silhouette": 0.702,
+   "silhouetteEstimated": true,
+   "compactness": null,
+   "margin": null,
+   "gate": {
+    "support": true,
+    "silhouette": true,
+    "compactness": true,
+    "margin": true
+   },
+   "bin": "gawai",
+   "hazard": "sedang",
+   "visual": "HP dengan tombol fisik.",
+   "components": [
+    "baterai litium",
+    "papan sirkuit",
+    "layar kecil"
+   ],
+   "hazardNote": "Indikatif sedang; baterai lepas atau internal.",
+   "steps": [
+    "Lepas baterai bila bisa, tutup kutubnya."
+   ],
+   "note": "Terpisah dari ponsel pintar karena bentuk tombol fisik.",
+   "sources": [
+    "BASEL_MOBILE_2025",
+    "EPA_LIION"
+   ],
+   "samples": []
+  },
+  {
+   "id": "K19",
+   "name": "TV & monitor LCD",
+   "family": "tampilan",
+   "status": "lolos",
+   "size": 41,
+   "sizeEstimated": true,
+   "silhouette": 0.73,
+   "silhouetteEstimated": true,
+   "compactness": null,
+   "margin": null,
+   "gate": {
+    "support": true,
+    "silhouette": true,
+    "compactness": true,
+    "margin": true
+   },
+   "bin": "layar",
+   "hazard": "sedang",
+   "visual": "TV atau monitor layar datar.",
+   "components": [
+    "panel layar",
+    "lampu latar",
+    "papan sirkuit",
+    "dudukan"
+   ],
+   "hazardNote": "Indikatif sedang; panel mudah retak.",
+   "steps": [
+    "Bawa tegak, jangan tekan layar."
+   ],
+   "note": "",
+   "sources": [
+    "EPA_ELECTRONICS",
+    "IDN_PLHK9_2024"
+   ],
+   "samples": []
+  },
+  {
+   "id": "K20",
+   "name": "Set komputer",
+   "family": "komputer",
+   "status": "tinjau",
+   "size": 101,
+   "sizeEstimated": false,
+   "silhouette": -0.048,
+   "silhouetteEstimated": false,
+   "compactness": null,
+   "margin": null,
+   "gate": {
+    "support": true,
+    "silhouette": false,
+    "compactness": true,
+    "margin": true
+   },
+   "bin": "ti",
+   "hazard": "sedang",
+   "visual": "Foto berisi beberapa perangkat sekaligus, biasanya satu set komputer meja.",
+   "components": [
+    "monitor",
+    "papan ketik",
+    "tetikus",
+    "unit sistem"
+   ],
+   "hazardNote": "Indikatif sedang; isi bergantung pada perangkat di dalam foto.",
+   "steps": [
+    "Pisahkan per perangkat bila sempat."
+   ],
+   "note": "Kelompok ini lebih mirip kelompok lain daripada dirinya sendiri (silhouette −0,048, syarat 0,10), karena isinya foto ruangan dengan banyak perangkat. Barang tetap dipilah ke Wadah Komputer; kelompoknya yang perlu diaudit.",
+   "sources": [
+    "BASEL_COMPUTING_2025",
+    "IDN_PLHK9_2024"
+   ],
+   "samples": [
+    {
+     "src": "images/sample/k20-1.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k20-2.jpg",
+     "sim": null
+    }
+   ]
+  },
+  {
+   "id": "K21",
+   "name": "Keyboard",
+   "family": "komputer",
+   "status": "lolos",
+   "size": 53,
+   "sizeEstimated": false,
+   "silhouette": 0.577,
+   "silhouetteEstimated": true,
+   "compactness": null,
+   "margin": null,
+   "gate": {
+    "support": true,
+    "silhouette": true,
+    "compactness": true,
+    "margin": true
+   },
+   "bin": "ti",
+   "hazard": "rendah",
+   "visual": "Keyboard komputer, berkabel atau nirkabel.",
+   "components": [
+    "papan sirkuit",
+    "membran",
+    "tutup tombol plastik",
+    "kabel"
+   ],
+   "hazardNote": "Indikatif rendah.",
+   "steps": [
+    "Keluarkan baterai bila nirkabel."
+   ],
+   "note": "Dipakai di uji pertumbuhan: muncul kembali sebagai N02 (recall 94,34%).",
+   "sources": [
+    "BASEL_COMPUTING_2025",
+    "IDN_PLHK9_2024"
+   ],
+   "samples": [
+    {
+     "src": "images/sample/k21-1.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k21-2.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k21-3.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k21-4.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k21-5.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k21-6.jpg",
+     "sim": null
+    }
+   ]
+  }
+ ],
+ "born": [
+  {
+   "id": "N01",
+   "name": "Turntable",
+   "family": "audio",
+   "status": "baru",
+   "size": 75,
+   "origin": "K09",
+   "batch": 3,
+   "purity": 1.0,
+   "recall": 0.9494,
+   "hidden": 79,
+   "bin": "kecil",
+   "hazard": "rendah",
+   "samples": [
+    {
+     "src": "images/sample/k09-1.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k09-2.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k09-3.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k09-4.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k09-5.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k09-6.jpg",
+     "sim": null
+    }
+   ],
+   "silhouette": null,
+   "visual": "Pemutar piringan hitam dengan tutup akrilik.",
+   "components": [
+    "motor",
+    "lengan jarum",
+    "papan sirkuit",
+    "pengeras suara"
+   ],
+   "hazardNote": "Indikatif rendah.",
+   "steps": [
+    "Masukkan utuh."
+   ],
+   "note": "Terbentuk sendiri dari foto yang belum dikenali, pada uji pertumbuhan: 79 foto K09 disembunyikan, 75 ditemukan kembali.",
+   "sources": [
+    "IDN_PLHK9_2024",
+    "WHO_EWASTE_2024"
+   ],
+   "gate": null,
+   "sizeEstimated": false
+  },
+  {
+   "id": "N02",
+   "name": "Keyboard",
+   "family": "komputer",
+   "status": "baru",
+   "size": 50,
+   "origin": "K21",
+   "batch": 3,
+   "purity": 1.0,
+   "recall": 0.9434,
+   "hidden": 53,
+   "bin": "ti",
+   "hazard": "rendah",
+   "samples": [
+    {
+     "src": "images/sample/k21-1.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k21-2.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k21-3.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k21-4.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k21-5.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k21-6.jpg",
+     "sim": null
+    }
+   ],
+   "silhouette": null,
+   "visual": "Keyboard komputer, berkabel atau nirkabel.",
+   "components": [
+    "papan sirkuit",
+    "membran",
+    "tutup tombol plastik",
+    "kabel"
+   ],
+   "hazardNote": "Indikatif rendah.",
+   "steps": [
+    "Keluarkan baterai bila nirkabel."
+   ],
+   "note": "Terbentuk sendiri dari foto yang belum dikenali, pada uji pertumbuhan: 53 foto K21 disembunyikan, 50 ditemukan kembali.",
+   "sources": [
+    "BASEL_COMPUTING_2025",
+    "IDN_PLHK9_2024"
+   ],
+   "gate": null,
+   "sizeEstimated": false
+  },
+  {
+   "id": "N03",
+   "name": "Saklar & stopkontak",
+   "family": "listrik",
+   "status": "baru",
+   "size": 20,
+   "origin": "K00",
+   "batch": 3,
+   "purity": 1.0,
+   "recall": 0.9091,
+   "hidden": 22,
+   "bin": "kecil",
+   "hazard": "rendah",
+   "samples": [
+    {
+     "src": "images/sample/k00-1.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k00-2.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k00-3.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k00-4.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k00-5.jpg",
+     "sim": null
+    },
+    {
+     "src": "images/sample/k00-6.jpg",
+     "sim": null
+    }
+   ],
+   "silhouette": null,
+   "visual": "Saklar dan stopkontak dinding, sering masih menempel di tembok.",
+   "components": [
+    "rumah plastik",
+    "terminal logam",
+    "pegas dan kontak tembaga"
+   ],
+   "hazardNote": "Indikatif rendah; risiko utama sisa kabel bertegangan bila dicopot dari instalasi aktif.",
+   "steps": [
+    "Pastikan sudah lepas dari listrik."
+   ],
+   "note": "Terbentuk sendiri dari foto yang belum dikenali, pada uji pertumbuhan: 22 foto K00 disembunyikan, 20 ditemukan kembali.",
+   "sources": [
+    "IDN_PLHK9_2024",
+    "IDN_PP27_2020"
+   ],
+   "gate": null,
+   "sizeEstimated": false
+  }
+ ],
+ "noise": {
+  "id": "noise",
+  "name": "Belum terkelompok",
+  "family": "noise",
+  "status": "karantina",
+  "size": 1709,
+  "bin": "karantina",
+  "hazard": "sedang",
+  "visual": "Foto yang tidak cukup mirip dengan klaster mana pun.",
+  "components": [],
+  "hazardNote": "Tidak diketahui; perlakukan sebagai B3 sampai diperiksa.",
+  "steps": [
+   "Barang dimasukkan ke Wadah Periksa.",
+   "Supervisor mengecek."
+  ],
+  "note": "Sebagian adalah pola langka yang kelak bisa menjadi klaster baru; sebagian lain memang tidak cukup jelas untuk dikelompokkan.",
+  "sources": [
+   "IDN_PLHK9_2024",
+   "IDN_PP27_2020"
+  ],
+  "samples": [
+   {
+    "src": "images/sample/noise-1.jpg",
+    "sim": 0.879,
+    "nearest": "K20"
+   },
+   {
+    "src": "images/sample/noise-2.jpg",
+    "sim": 0.861,
+    "nearest": "K21"
+   },
+   {
+    "src": "images/sample/noise-3.jpg",
+    "sim": null,
+    "margin": 0.061
+   },
+   {
+    "src": "images/sample/noise-4.jpg",
+    "sim": null,
+    "margin": 0.069
+   }
+  ]
+ }
+}

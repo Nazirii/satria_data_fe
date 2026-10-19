@@ -1,0 +1,23 @@
+{
+  "name": "sipilah-fe",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Frontend operator SiPilah: pemilah e-waste berbasis klaster visual (Satria Data BDC 2026)",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "@fontsource/geist-mono": "^5.2.5",
+    "@fontsource/geist-sans": "^5.2.5",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.1",
+    "vite": "^7.1.0"
+  }
+}
